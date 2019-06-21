@@ -8,9 +8,10 @@ const TOKEN =
 
 export default function HelloWorld() {
   const [view, setView] = useState({
-    latitude: 29.8721,
-    longitude: 90.994,
-    zoom: 8
+    latitude: -10.9506,
+    longitude: 45.4572,
+    // center: [-21.9270884, 64.1436456],
+    zoom: 4
   })
 
   return (
