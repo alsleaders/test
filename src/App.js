@@ -8,17 +8,18 @@ const TOKEN =
 
 export default function HelloWorld() {
   const [view, setView] = useState({
-    width: '100vw',
-    height: '100vh',
-    latitude: 27.7577,
-    longitude: -88.4376,
-    zoom: 12
+    latitude: 29.8721,
+    longitude: 90.994,
+    zoom: 8
   })
 
   return (
     <>
       <ReactMapGL
         {...view}
+        width="100vw"
+        height="100vh"
+        mapStyle="mapbox://styles/mapbox/satellite-streets-v11"
         mapboxApiAccessToken={TOKEN}
         onViewportChange={view => {
           setView(view)
